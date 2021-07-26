@@ -1,0 +1,17 @@
+it.only('login test', function(){
+
+    cy.visit('https://dev.devmobo.com/login')
+    cy.get('#footerSignUpLink').click()
+    cy.get('#email').type('lokzz05000@gmail.com')
+    cy.get('#password').type('Lokesh@52510')
+    cy.get('#confirmPassword').type('Lokesh@52510')
+    cy.get('#createAccountButton').click()
+    cy.get('#firstName').type('Lokesh')
+    cy.get('#lastName').type('B')
+    cy.get('#zip').type('90011')
+    cy.get('#nextButton').click()
+    cy.get('#associationName').type('abc123')
+    cy.get('#zipcode').type('90011')
+    cy.get('#addAssocationButton').click()
+
+})
